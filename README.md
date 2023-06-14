@@ -19,4 +19,4 @@ This is a simple web application for exploring amazing destinations. The Tourism
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ernest028/Tours.git
+   git clone https://github.com/ernest028/Tours.html.git
