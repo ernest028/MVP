@@ -12,13 +12,18 @@
         }
 
         header {
-            background-color: #333;
+            background-color: #f44ff4;
             color: #bede05;
             padding: 10px;
             text-align: center;
         }
 
         h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        h2 {
             margin: 0;
             font-size: 24px;
         }
@@ -36,12 +41,12 @@
             margin: 10px;
             padding: 10px;
             width: calc(33.33% - 20px);
-            background-color: #fff;
+            background-color: #e6c1c1;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
+                    }
 
         .destination-card img {
             width: 200px;
@@ -63,8 +68,8 @@
 
         .destination-card button {
             padding: 5px 10px;
-            background-color: #333;
-            color: #fff;
+            background-color: #c980c9;
+            color: #3413ec;
             border: none;
             cursor: pointer;
         }
@@ -72,16 +77,32 @@
         .destination-card button:hover {
             background-color: #555;
         }
+        
 
         body {
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-    .dropdown-content a {
-    color: rgb(105, 226, 25);
-}
+    
+    }
+    
+    button:hover {
+        background-color: #f70e0e;
+    }
+
+
+        .dropdown-content a {
+        color: rgb(105, 226, 25);
+    }
+
+    .caption {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        color: #ef0bb2;
+        background-color: #bede05;
+        }
 
 
     </style>
@@ -89,7 +110,8 @@
 
 <body>
     <header>
-        <h1>Explore Amazing Destinations</h1>
+        <h1>PIEREE SAFARIS</h1>
+        <h2>Explore Amazing Destinations</h2>
         <div class="dropdown">
             <div class="menu-icon"></div>
             <div class="dropdown-content">
@@ -109,7 +131,7 @@
     <div class="destination-container">
         <div class="destination-card">
             <img src="images/image1.jpg" alt="Destination Image">
-            <h2>Destination Name 1</h2>
+            <h2>Nairobi National Park</h2>
             <p>Description of Destination 1</p>
             <p>Facilities: Facility 1, Facility 2, Facility 3</p>
             <p>Services: Service 1, Service 2, Service 3</p>
@@ -119,7 +141,7 @@
 
         <div class="destination-card">
             <img src="images/image4.jpg" alt="Destination Image">
-            <h2>Destination Name 2</h2>
+            <h2>Amboseli National Park</h2>
             <p>Description of Destination 2</p>
             <p>Facilities: Facility 1, Facility 2, Facility 3</p>
             <p>Services: Service 1, Service 2, Service 3</p>
@@ -129,7 +151,7 @@
 
         <div class="destination-card">
             <img src="images/image2.jpg" alt="Destination Image">
-            <h2>Destination Name 3</h2>
+            <h2>Serengeti National Park</h2>
             <p>Description of Destination 3</p>
             <p>Facilities: Facility 1, Facility 2, Facility 3</p>
             <p>Services: Service 1, Service 2, Service 3</p>
@@ -139,7 +161,7 @@
 
         <div class="destination-card">
             <img src="images/image7.jpg" alt="Destination Image">
-            <h2>Destination Name 3</h2>
+            <h2>Kruger National Park</h2>
             <p>Description of Destination 3</p>
             <p>Facilities: Facility 1, Facility 2, Facility 3</p>
             <p>Services: Service 1, Service 2, Service 3</p>
@@ -149,7 +171,7 @@
 
         <div class="destination-card">
             <img src="images/image3.jpg" alt="Destination Image">
-            <h2>Destination Name 3</h2>
+            <h2>Hwange National Park</h2>
             <p>Description of Destination 3</p>
             <p>Facilities: Facility 1, Facility 2, Facility 3</p>
             <p>Services: Service 1, Service 2, Service 3</p>
@@ -159,7 +181,7 @@
 
         <div class="destination-card">
             <img src="images/image4.jpg" alt="Destination Image">
-            <h2>Destination Name 3</h2>
+            <h2>Etosha National Park</h2>
             <p>Description of Destination 3</p>
             <p>Facilities: Facility 1, Facility 2, Facility 3</p>
             <p>Services: Service 1, Service 2, Service 3</p>
@@ -169,7 +191,7 @@
 
         <div class="destination-card">
             <img src="images/image6.jpg" alt="Destination Image">
-            <h2>Destination Name 3</h2>
+            <h2>Chobe National Park</h2>
             <p>Description of Destination 3</p>
             <p>Facilities: Facility 1, Facility 2, Facility 3</p>
             <p>Services: Service 1, Service 2, Service 3</p>
@@ -179,7 +201,7 @@
 
         <div class="destination-card">
             <img src="images/image5.jpg" alt="Destination Image">
-            <h2>Destination Name 3</h2>
+            <h2>Kidepo National Park</h2>
             <p>Description of Destination 3</p>
             <p>Facilities: Facility 1, Facility 2, Facility 3</p>
             <p>Services: Service 1, Service 2, Service 3</p>
@@ -187,9 +209,12 @@
             <button>Book Now</button>
         </div>
 
-        <!-- Add more destination cards as needed -->
+        <div class="caption">
+            Embark on an unforgettable adventure amidst breathtaking nature, where serene trails, cascading waterfalls, and
+            majestic wildlife await in our enchanting national park.
+        </div>
 
-    </div>
+        </div>
 
 </body>
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>GPT Chatbot</title>
+    <style>
+        /* CSS styles for the chatbot UI */
+        /* Add your own custom styles here */
+    </style>
+</head>
+
+<body>
+    <div id="chat-container">
+        <div id="chat-log"></div>
+        <div id="user-input">
+            <input type="text" id="user-message" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for interacting with the chatbot
+
+        // Function to send user message and receive response
+        function sendMessage() {
+            const userInput = document.getElementById('user-message');
+            const userMessage = userInput.value;
+            userInput.value = '';
+
+            // Display user message in the chat log
+            displayMessage(userMessage, 'user');
+
+            // Send the user message to the server for processing
+            // You'll need to implement the server-side code to communicate with GPT-3.5
+
+            // Receive and display the response from the server
+            const botMessage = 'This is the chatbot response'; // Replace with the actual response from the server
+            displayMessage(botMessage, 'bot');
+        }
+
+        // Function to display a message in the chat log
+        function displayMessage(message, sender) {
+            const chatLog = document.getElementById('chat-log');
+            const messageElement = document.createElement('div');
+            messageElement.classList.add(sender);
+            messageElement.textContent = message;
+            chatLog.appendChild(messageElement);
+        }
+
+        // Event listener for the send button
+        const sendButton = document.getElementById('send-button');
+        sendButton.addEventListener('click', sendMessage);
+
+        // Event listener for the Enter key to send the message
+        const userInput = document.getElementById('user-message');
+        userInput.addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+
+</html>
